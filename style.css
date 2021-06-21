@@ -20,7 +20,7 @@ h1{
   min-height: 100vh;
   background: url(./images/bg.jpg);
   background-size: cover;
-  background-attachment: center;
+  background-position: center;
 }
 .music-container{
   background: rgb(255, 255, 255);
