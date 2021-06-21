@@ -12,6 +12,7 @@
 }
 .player{
   overflow: hidden;
+  height: 100vh;
 }
 .display{
   height: calc(100vh - 111px);
@@ -48,9 +49,12 @@
   max-width: 600px;
 }
 .info{
+  position: fixed;
+  bottom: 0;
   padding: 10px;
-  position: relative;
+  /* position: relative; */
   display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
   /* height: 80px; */

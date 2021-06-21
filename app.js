@@ -8,12 +8,14 @@ const nextBtn = document.querySelector('#next')
 const progress = document.querySelector('.progress')
 const progressContainer = document.querySelector('.progress-cont')
 const runningTime = document.querySelector('#currentTime')
+const disc = document.querySelector('.disc')
+
 
 const songs = [
   {
     title: "Don't Fight The Feeling",
     audio: "./music/Don't Fight The Feeling.mp3",
-    cover: "./images/1.jpg"
+    cover: "./images/album.jpg"
   },
   {
     title: "Just As Usual",
@@ -92,6 +94,16 @@ playBtn.addEventListener('click', ()=> {
     playSong()
   }
 })
+
+disc.addEventListener('dblclick', ()=> {
+  const isPlaying = player.classList.contains('play')
+  if(isPlaying){
+    pauseSong()
+  }else{
+    playSong()
+  }
+})
+
 
 // SET SEEK SONG PROGRESS
 function setProgress(e){
