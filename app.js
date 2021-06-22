@@ -14,28 +14,28 @@ const disc = document.querySelector('.disc')
 const songs = [
   {
     title: "Don't Fight The Feeling",
-    audio: "./music/Don't Fight The Feeling.mp3",
-    cover: "./images/album.jpg"
+    audio: "./music/dftf/Don't Fight The Feeling.mp3",
+    cover: "./images/dftf/album.jpg"
   },
   {
     title: "Just As Usual",
-    audio: "./music/Just As Usual.mp3",
-    cover: "./images/2.jpg"
+    audio: "./music/dftf/Just As Usual.mp3",
+    cover: "./images/dftf/2.jpg"
   },
   {
     title: "No Matter",
-    audio: "./music/No Matter.mp3",
-    cover: "./images/3.jpg"
+    audio: "./music/dftf/No Matter.mp3",
+    cover: "./images/dftf/3.jpg"
   },
   {
     title: "Paradise",
-    audio: "./music/Paradise.mp3",
-    cover: "./images/4.jpg"
+    audio: "./music/dftf/Paradise.mp3",
+    cover: "./images/dftf/4.jpg"
   },
   {
     title: "Runaway",
-    audio: "./music/Runaway.mp3",
-    cover: "./images/5.jpg"
+    audio: "./music/dftf/Runaway.mp3",
+    cover: "./images/dftf/5.jpg"
   },
 ]
 
