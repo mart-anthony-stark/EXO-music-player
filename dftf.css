@@ -10,6 +10,14 @@
   --pri: #2222;
   -accent:#06be00;
 }
+#back{
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  font-size: 30px;
+  color: white;
+  z-index: 99;
+}
 .player{
   overflow: hidden;
   height: 100vh;
