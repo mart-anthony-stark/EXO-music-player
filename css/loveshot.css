@@ -1,0 +1,12 @@
+
+:root{
+  --pri: #2222;
+  --accent:#be0000;
+}
+
+.progress{
+  background: var(--accent);
+}
+.action-btn:hover{
+  color: var(--accent);
+}

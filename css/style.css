@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper{
+  background: black;
+  min-height: 100vh;
+}
+.flex{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.albums{
+  padding: 25px;
+}
+.albums a{
+  position: relative;
+  text-decoration: none;
+  color: white;
+}
+.albums a .overlay{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #000;
+  border: 1px solid white;
+  padding: 3px;
+  text-align: center;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: .5s ease;
+}
+.albums a:hover .overlay{
+  transform: scaleY(1);
+}
+.albums a img{
+  border: 1px solid #fff;
+  height: 200px;
+  width: 200px;
+}
+.youtube-vids{
+  padding: 50px;
+}
