@@ -138,3 +138,28 @@ audio.addEventListener('timeupdate', (e)=>{
 progressContainer.addEventListener('click', setProgress)
 
 audio.addEventListener('ended', nextSong)
+
+
+// SIDEBAR
+const sidebar = document.querySelector('.sidebar')
+const listBtn = document.querySelector('#list')
+const songSelectBtns = document.querySelectorAll('#song-select')
+const exitSidebar = document.querySelector('#x-sidebar')
+listBtn.addEventListener('click', ()=>{
+  sidebar.classList.toggle('open')
+})
+exitSidebar.addEventListener('click', ()=>{
+  sidebar.classList.remove('open')
+})
+
+console.log(songSelectBtns)
+
+for(let i = 0; i < songs.length; i++){
+  console.log(songs[i])
+  songSelectBtns[i].addEventListener('click', ()=>{
+    songIndex = i
+    loadSong(songs[songIndex])
+    playSong()
+    sidebar.classList.remove('open')
+  })
+}

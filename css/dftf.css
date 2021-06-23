@@ -7,8 +7,8 @@
   display: none;
 }
 :root{
-  --pri: #2222;
-  -accent:#06be00;
+  --primary: #222;
+  --accent:#06be00;
 }
 #back{
   position: fixed;
@@ -16,7 +16,7 @@
   top: 10px;
   font-size: 30px;
   color: white;
-  z-index: 99;
+  z-index: 98;
 }
 .player{
   overflow: hidden;
@@ -33,6 +33,7 @@
 .disc{
   height: 100%;
   max-height: 400px;
+  max-width: 400px;
   border-radius: 50%;
   animation: rotate 20s linear infinite;
   animation-play-state: paused;
@@ -103,6 +104,36 @@
 }
 .big{
   font-size: 2em;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  margin-left: -300px;
+  width: 300px;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  transition: .5s ease-in-out;
+}
+.sidebar button#song-select{
+  padding: 10px;
+}
+.sidebar.open{
+  margin-left: 0px;
+}
+.sidebar #x-sidebar{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  color: #fff;
+  border: none;
+  font-size: 1.3em;
+  cursor: pointer;
 }
 @media(max-width: 812px){
   #cover{
