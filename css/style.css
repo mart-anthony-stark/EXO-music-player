@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(19, 194, 19);
+}
 .wrapper{
   background: black;
   min-height: 100vh;
@@ -45,4 +51,21 @@
 }
 .youtube-vids{
   padding: 50px;
+}
+.wrapper{
+  background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,0.9)), url('../images/exo.jpg') center;
+  background-size: cover;
+  padding: 10px;
+}
+h1#title{
+  font-size: 8rem;
+  color: rgb(19, 194, 19);
+  margin: 50px 0;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+}
+h1#title span{
+  display: block;
+  font-size: 2rem;
 }
