@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="./css/dftf.css">
   <title>EXO - Don't Fight The Feeling Playlist</title>
 </head>
+
 <body>
   <div class="sidebar">
     <button id="x-sidebar">
@@ -18,49 +20,79 @@
     <button id="song-select" class="action-btn">Paradise</button>
     <button id="song-select" class="action-btn">Runaway</button>
   </div>
-  
+
   <a href="/"><i id="back" class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
-  
+
   <div class="player">
 
-  <div class="display">
-    <img class="disc" src="./images/dftf/disc.jpeg" alt="">
-  </div>
+    <div class="display">
+      <img class="disc" src="./images/dftf/disc.jpeg" alt="">
+    </div>
 
-  <audio src="" id="audio"></audio>
-  <div class="info">
-    <img id="cover" src="" alt="">
-    
-    <div class="navigation">
-      <div id="title">Don't Fight The Feeling</div>
-      <div class="progress-cont">
-        <div class="progress"></div>
-        <!-- <p id="currentTime">4:25</p> -->
+    <audio src="" id="audio"></audio>
+    <div class="info">
+      <img id="cover" src="" alt="">
+
+      <div class="navigation">
+        <div id="title">Don't Fight The Feeling</div>
+        <div class="progress-cont">
+          <div class="progress"></div>
+          <!-- <p id="currentTime">4:25</p> -->
+        </div>
+
+        <div class="controls">
+          <button id="prev" class="action-btn">
+            <i class="fa fa-backward" aria-hidden="true"></i>
+          </button>
+
+          <button id="play" class="action-btn big">
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+
+          <button id="next" class="action-btn">
+            <i class="fa fa-forward" aria-hidden="true"></i>
+          </button>
+
+          <button id="list" class="action-btn">
+            <i class="fa fa-list-ul" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
-
-    <div class="controls">
-      <button id="prev" class="action-btn">
-        <i class="fa fa-backward" aria-hidden="true"></i>
-      </button>
-
-      <button id="play" class="action-btn big">
-        <i class="fa fa-play" aria-hidden="true"></i>
-      </button>
-
-      <button id="next" class="action-btn">
-        <i class="fa fa-forward" aria-hidden="true"></i>
-      </button>
-
-      <button id="list" class="action-btn">
-        <i class="fa fa-list-ul" aria-hidden="true"></i>
-      </button>
     </div>
-    </div>
-  </div>
-  
-  
+
+
   </div>
 
-<script src="./js/dftf.js"></script>
+  <script src="./js/musicPlayer.js"></script>
+  <script>
+    musicPlayer([
+      {
+        title: "Don't Fight The Feeling",
+        audio: "./music/dftf/Don't Fight The Feeling.mp3",
+        cover: "./images/dftf/album.jpg"
+      },
+      {
+        title: "Just As Usual",
+        audio: "./music/dftf/Just As Usual.mp3",
+        cover: "./images/dftf/2.jpg"
+      },
+      {
+        title: "No Matter",
+        audio: "./music/dftf/No Matter.mp3",
+        cover: "./images/dftf/3.jpg"
+      },
+      {
+        title: "Paradise",
+        audio: "./music/dftf/Paradise.mp3",
+        cover: "./images/dftf/4.jpg"
+      },
+      {
+        title: "Runaway",
+        audio: "./music/dftf/Runaway.mp3",
+        cover: "./images/dftf/5.jpg"
+      },
+    ])
+  </script>
 </body>
+
 </html>
