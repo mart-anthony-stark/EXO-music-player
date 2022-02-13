@@ -117,10 +117,7 @@ const musicPlayer = (songs) => {
     sidebar.classList.remove("open");
   });
 
-  console.log(songSelectBtns);
-
   for (let i = 0; i < songs.length; i++) {
-    console.log(songs[i]);
     songSelectBtns[i].addEventListener("click", () => {
       songIndex = i;
       loadSong(songs[songIndex]);
