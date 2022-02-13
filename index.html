@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>EXO MP3 PLAYER</title>
 </head>
+
 <body>
   <div class="loader">
-    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    <div class="lds-ellipsis">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
   </div>
   <div class="wrapper">
     <h1 id='title'>Exotify<span>Music Player</span></h1>
     <div class="albums flex">
-      <a href="/dftf.html">
+      <a href="./dftf.html">
         <div class="overlay">Don't Fight The Feeling Special Album</div>
         <img src="./images/dftf/disc.jpeg" alt="">
       </a>
 
-      <a href="/obsession.html">
+      <a href="./obsession.html">
         <div class="overlay">Obsession - 6th Album</div>
         <img src="./images/obsession/disc.jpeg" alt="">
       </a>
 
-      <a href="/loveshot.html">
+      <a href="./loveshot.html">
         <div class="overlay">Love Shot - 5th Album Repackage</div>
         <img src="./images/loveshot/disc.jpeg" alt="">
       </a>
 
-      <a href="/thewar.html">
+      <a href="./thewar.html">
         <div class="overlay">The War Album</div>
         <img src="./images/thewar/disc.jpeg" alt="">
       </a>
     </div>
-    
+
     <div class="youtube-vids flex">
-      <iframe width="360" height="215" src="https://www.youtube.com/embed/2IkoKhr6Tss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/2IkoKhr6Tss" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-      <iframe width="360" height="215" src="https://www.youtube.com/embed/uxmP4b2a0uY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/uxmP4b2a0uY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-      <iframe width="360" height="215" src="https://www.youtube.com/embed/pSudEWBAYRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/pSudEWBAYRE" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
 
-      <iframe width="360" height="215" src="https://www.youtube.com/embed/IdssuxDdqKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/IdssuxDdqKk" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
   </div>
- <script>
-   setInterval(()=>{
-     document.querySelector('.loader').classList.add('hidden')
-   },3000)
- </script>
+  <script>
+    setInterval(() => {
+      document.querySelector('.loader').classList.add('hidden')
+    }, 3000)
+  </script>
 
 </body>
+
 </html>
